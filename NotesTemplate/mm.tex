@@ -92,8 +92,22 @@
 
 \newenvironment{solution}{
 \begin{proof}[Solution]}{\end{proof}}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{cabin}
+\usepackage[default]{cantarell}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{contentpage}{%
+	\lhead{\textit{\rightmark}}
+	\cfoot{\thepage}
+}
 %% Color definitions
 % From Nord colorscheme...
+
+% Set text color
+
 \definecolor{nordbg1}{HTML}{2E3440}
 \definecolor{nordbg2}{HTML}{3B4252}
 \definecolor{nordbg3}{HTML}{434C5E}
@@ -114,8 +128,21 @@
 \definecolor{nordauroraGreen}{HTML}{A3BE8C}
 \definecolor{nordauroraPurple}{HTML}{B48EAD}
 
-% Complementary, extra color defs
-% TODO -- move from the below theorem definitions up here... where they belong
+\definecolor{nordfrost1Tint}{HTML}{F1F7F6}
+\definecolor{nordfrost2Tint}{HTML}{F9F7F9}
+\definecolor{nordfrost3Tint}{HTML}{EFF3F7}
+\definecolor{nordfrost4Tint}{HTML}{EDFFFB}
+
+\definecolor{nordauroraRedTint}{HTML}{F7EBEC}
+\definecolor{nordauroraOrangeTint}{HTML}{F9F0ED}
+\definecolor{nordauroraYellowTint}{HTML}{FCF9F1}
+\definecolor{nordauroraGreenTint}{HTML}{F4F7F1}
+\definecolor{nordauroraPurpleTint}{HTML}{F6F1F5}
+
+% set text color
+\color{nordbg4}
+% Set page background color
+\pagecolor{nordfg3}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INDEX
@@ -260,7 +287,57 @@
 	},
 	headfont=\normalfont\bfseries\color{nordbg4}
 ]{nordbg4box}
-\definecolor{nordfrost4Tint}{HTML}{edfffb}
+\declaretheoremstyle[
+	mdframed={
+		backgroundcolor=nordfrost1Tint,
+		linecolor=nordfrost1,
+		rightline=false,
+		topline=false,
+		bottomline=false,
+		linewidth=2pt,
+		innertopmargin=5pt,
+		innerbottommargin=8pt,
+		innerleftmargin=8pt,
+		leftmargin=-2pt,
+		skipbelow=2pt,
+		nobreak
+	},
+	headfont=\normalfont\bfseries\color{nordfrost1}
+]{nordfrost1box}
+\declaretheoremstyle[
+	mdframed={
+		backgroundcolor=nordfrost2Tint,
+		linecolor=nordfrost2,
+		rightline=false,
+		topline=false,
+		bottomline=false,
+		linewidth=2pt,
+		innertopmargin=5pt,
+		innerbottommargin=8pt,
+		innerleftmargin=8pt,
+		leftmargin=-2pt,
+		skipbelow=2pt,
+		nobreak
+	},
+	headfont=\normalfont\bfseries\color{nordfrost2}
+]{nordfrost2box}
+\declaretheoremstyle[
+	mdframed={
+		backgroundcolor=nordfrost3Tint,
+		linecolor=nordfrost3,
+		rightline=false,
+		topline=false,
+		bottomline=false,
+		linewidth=2pt,
+		innertopmargin=5pt,
+		innerbottommargin=8pt,
+		innerleftmargin=8pt,
+		leftmargin=-2pt,
+		skipbelow=2pt,
+		nobreak
+	},
+	headfont=\normalfont\bfseries\color{nordfrost3}
+]{nordfrost3box}
 \declaretheoremstyle[
 	mdframed={
 		backgroundcolor=nordfrost4Tint,
@@ -278,7 +355,6 @@
 	},
 	headfont=\normalfont\bfseries\color{nordfrost4}
 ]{nordfrost4box}
-\definecolor{nordauroraRedTint}{HTML}{F7EBEC}
 \declaretheoremstyle[
 	mdframed={
 		backgroundcolor=nordauroraRedTint,
@@ -298,7 +374,44 @@
 ]{nordauroraRedbox}
 \makeatletter
 \makeatother
-\definecolor{nordauroraGreenTint}{HTML}{F4F7F1}
+\declaretheoremstyle[
+	mdframed={
+		backgroundcolor=nordauroraOrangeTint,
+		linecolor=nordauroraOrange,
+		rightline=false,
+		topline=false,
+		bottomline=false,
+		linewidth=2pt,
+		innertopmargin=5pt,
+		innerbottommargin=8pt,
+		innerleftmargin=8pt,
+		leftmargin=-2pt,
+		skipbelow=2pt,
+		nobreak
+	},
+	headfont=\normalfont\bfseries\color{nordauroraOrange}
+]{nordauroraOrangebox}
+\makeatletter
+\makeatother
+\declaretheoremstyle[
+	mdframed={
+		backgroundcolor=nordauroraYellowTint,
+		linecolor=nordauroraYellow,
+		rightline=false,
+		topline=false,
+		bottomline=false,
+		linewidth=2pt,
+		innertopmargin=5pt,
+		innerbottommargin=8pt,
+		innerleftmargin=8pt,
+		leftmargin=-2pt,
+		skipbelow=2pt,
+		nobreak
+	},
+	headfont=\normalfont\bfseries\color{nordauroraYellow}
+]{nordauroraYellowbox}
+\makeatletter
+\makeatother
 \declaretheoremstyle[
 	mdframed={
 		backgroundcolor=nordauroraGreenTint,
@@ -316,12 +429,12 @@
 	},
 	headfont=\normalfont\bfseries\color{nordauroraGreen}
 ]{nordauroraGreenbox}
-\definecolor{nirlightbrown}{RGB}{252,240,235}
-\definecolor{nirdarkbrown}{HTML}{7a5342}
+\makeatletter
+\makeatother
 \declaretheoremstyle[
 	mdframed={
-		backgroundcolor=nirlightbrown,
-		linecolor=nirdarkbrown,
+		backgroundcolor=nordauroraPurpleTint,
+		linecolor=nordauroraPurple,
 		rightline=false,
 		topline=false,
 		bottomline=false,
@@ -333,8 +446,8 @@
 		skipbelow=2pt,
 		nobreak
 	},
-	headfont=\normalfont\bfseries\color{nirdarkbrown}
-]{nirbrownbox}
+	headfont=\normalfont\bfseries\color{nordauroraPurple}
+]{nordauroraPurplebox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% THM BOXES
 % See http://texdoc.net/texmf-dist/doc/latex/thmtools/thmtools.pdf
@@ -359,18 +472,18 @@
 \else
 	\declaretheorem[style=nordbg4box,name=Theorem,within=chapter]{thm}
 \fi
-\declaretheorem[style=nordbg4box,name=Theorem,numbered=no]{thm*}
-\declaretheorem[style=nordbg4box,name=Theorem,sibling=thm]{theorem}
-\declaretheorem[style=nordbg4box,name=Theorem,numbered=no]{theorem*}
-\declaretheorem[style=nordbg4box,name=Proposition,sibling=thm]{prop}
-\declaretheorem[style=nordbg4box,name=Proposition,numbered=no]{prop*}
-\declaretheorem[style=nordbg4box,name=Proposition,sibling=thm]{proposition}
-\declaretheorem[style=nordbg4box,name=Proposition,numbered=no]{proposition*}
+\declaretheorem[style=nordfrost3box,name=Theorem,numbered=no]{thm*}
+\declaretheorem[style=nordfrost3box,name=Theorem,sibling=thm]{theorem}
+\declaretheorem[style=nordfrost3box,name=Theorem,numbered=no]{theorem*}
+\declaretheorem[style=nordauroraYellowbox,name=Proposition,sibling=thm]{prop}
+\declaretheorem[style=nordauroraYellowbox,name=Proposition,numbered=no]{prop*}
+\declaretheorem[style=nordauroraYellowbox,name=Proposition,sibling=thm]{proposition}
+\declaretheorem[style=nordauroraYellowbox,name=Proposition,numbered=no]{proposition*}
 \declaretheorem[style=nordbg4box,name=Problem,numberwithin=section]{prob}
-\declaretheorem[style=nordbg4box,name=Lemma,sibling=thm]{lem}
-\declaretheorem[style=nordbg4box,name=Lemma,numbered=no]{lem*}
-\declaretheorem[style=nordbg4box,name=Lemma,sibling=thm]{lemma}
-\declaretheorem[style=nordbg4box,name=Lemma,numbered=no]{lemma*}
+\declaretheorem[style=nordauroraOrangebox,name=Lemma,sibling=thm]{lem}
+\declaretheorem[style=nordauroraOrangebox,name=Lemma,numbered=no]{lem*}
+\declaretheorem[style=nordauroraOrangebox,name=Lemma,sibling=thm]{lemma}
+\declaretheorem[style=nordauroraOrangebox,name=Lemma,numbered=no]{lemma*}
 \declaretheorem[style=nordbg4box,name=Corollary,sibling=thm]{cor}
 \declaretheorem[style=nordbg4box,name=Corollary,numbered=no]{cor*}
 \declaretheorem[style=nordbg4box,name=Corollary,sibling=thm]{corollary}
@@ -389,32 +502,24 @@
 \declaretheorem[style=nordauroraGreenbox,name=Axiom,numbered=no]{ax*}
 \declaretheorem[style=nordauroraGreenbox,name=Axiom,sibling=thm]{axiom}
 \declaretheorem[style=nordauroraGreenbox,name=Axiom,numbered=no]{axiom*}
-\declaretheorem[style=nordauroraGreenbox,name=Inventory,sibling=thm]{inv}
-\declaretheorem[style=nordauroraGreenbox,name=Inventory,numbered=no]{inv*}
-\declaretheorem[style=nordauroraGreenbox,name=Inventory,sibling=thm]{inventory}
-\declaretheorem[style=nordauroraGreenbox,name=Inventory,numbered=no]{inventory*}
-\declaretheorem[style=nordauroraGreenbox,name=Notation,sibling=thm]{notation}
-\declaretheorem[style=nordauroraGreenbox,name=Notation,numbered=no]{notation*}
-\declaretheorem[style=nordauroraGreenbox,name=Definition,sibling=thm]{defihelper}
-\declaretheorem[style=nordauroraGreenbox,name=Definition,numbered=no]{defihelper*}
+\declaretheorem[style=nordauroraOrangebox,name=Notation,sibling=thm]{notation}
+\declaretheorem[style=nordauroraOrangebox,name=Notation,numbered=no]{notation*}
+\declaretheorem[style=nordfrost4box,name=Definition,sibling=thm]{defihelper}
+\declaretheorem[style=nordfrost4box,name=Definition,numbered=no]{defihelper*}
 
-\declaretheorem[style=nordfrost4box,name=Example,sibling=thm]{ex}
-\declaretheorem[style=nordfrost4box,name=Example,numbered=no]{ex*}
-\declaretheorem[style=nordfrost4box,name=Example,sibling=thm]{example}
-\declaretheorem[style=nordfrost4box,name=Example,numbered=no]{example*}
-\declaretheorem[style=nordfrost4box,name=Non-Example,sibling=thm]{nex}
-\declaretheorem[style=nordfrost4box,name=Non-Example,numbered=no]{nex*}
-\declaretheorem[style=nordfrost4box,name=Non-Definition,sibling=thm]{ndefi}
-\declaretheorem[style=nordfrost4box,name=Non-Definition,numbered=no]{ndefi*}
+\declaretheorem[style=nordfrost1box,name=Example,sibling=thm]{ex}
+\declaretheorem[style=nordfrost1box,name=Example,numbered=no]{ex*}
+\declaretheorem[style=nordfrost1box,name=Example,sibling=thm]{example}
+\declaretheorem[style=nordfrost1box,name=Example,numbered=no]{example*}
 \declaretheorem[style=nordfrost4box,name=Exercise,sibling=thm]{exercise}
 \declaretheorem[style=nordfrost4box,name=Exercise,numbered=no]{exercise*}
 \declaretheorem[style=nordfrost4box,name=Exercise,sibling=thm]{exe}
 \declaretheorem[style=nordfrost4box,name=Exercise,numbered=no]{exe*}
 
-\declaretheorem[style=nirbrownbox,name=Remark,sibling=thm]{remark}
-\declaretheorem[style=nirbrownbox,name=Remark,numbered=no]{remark*}
-\declaretheorem[style=nirbrownbox,name=Quote,sibling=thm]{quot}
-\declaretheorem[style=nirbrownbox,name=Quote,numbered=no]{quot*}
+\declaretheorem[style=nordauroraPurplebox,name=Remark,sibling=thm]{remark}
+\declaretheorem[style=nordauroraPurplebox,name=Remark,numbered=no]{remark*}
+\declaretheorem[style=nordauroraPurplebox,name=Quote,sibling=thm]{quot}
+\declaretheorem[style=nordauroraPurplebox,name=Quote,numbered=no]{quot*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% /THM BOXES
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INDEX BOXES

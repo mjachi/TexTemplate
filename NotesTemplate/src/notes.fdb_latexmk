@@ -1,11 +1,11 @@
 # Fdb version 3
-["latex"] 1662841478 "notes.tex" "notes.dvi" "notes" 1662841480
-  "../mm.tex" 1662841473 16938 6737e3106242689806ae4b5c8f963187 ""
+["latex"] 1662847696 "notes.tex" "notes.dvi" "notes" 1662847697
+  "../mm.tex" 1662847691 18754 e699c88af0afa41aaa8003b41a84527f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/gnome/cantarell/Cantarell-Bold-OT1-TLF.tfm" 1561066284 1348 c9e26393e2fee01d3a0c51f97c46d577 ""
-  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/gnome/cantarell/Cantarell-Regular-OT1-TLF-Slanted.tfm" 1561066284 1352 eaabe31fb692ce3e2912df3a9e21df8a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/gnome/cantarell/Cantarell-Regular-OT1-TLF.tfm" 1561066284 1352 0273300cd0ccbda80e66c4786d738907 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-ot1.tfm" 1594851208 13448 ed105390ad82334bc3ba74847fde991e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Bold-tlf-sc-ot1.tfm" 1594851208 6864 90906ee64095ba730430177c2f95ae80 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Italic-tlf-ot1.tfm" 1594851208 13256 5b9cb5fb386c6162be3d2b6c0d2a498c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Regular-tlf-ot1.tfm" 1594851208 13980 e501e4d251a9dc8124ee8349cffd539e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/impallari/cabin/Cabin-Regular-tlf-sc-ot1.tfm" 1594851208 7224 ec3d6e67a1f47ec40cf5e19581810d80 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -220,12 +220,12 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/latex.fmt" 1661786181 2881291 d196d1f1666126a393b6a57bb120ab0d ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "notes.aux" 1662841479 3356 69c717174070d336b232eef940dac627 "latex"
-  "notes.ind" 1662841279 143 fb45baf7157e3b26cbcc925a3fc88bcc "makeindex notes.idx"
-  "notes.out" 1662841479 394 41794a2e333de4ee12e6e48ea1006a1f "latex"
+  "notes.aux" 1662847697 3356 018823761d962191317c79e2f8d25c98 "latex"
+  "notes.ind" 1662847696 143 fb45baf7157e3b26cbcc925a3fc88bcc "makeindex notes.idx"
+  "notes.out" 1662847697 394 41794a2e333de4ee12e6e48ea1006a1f "latex"
   "notes.pre" 0 -1 0 "latex"
   "notes.tex" 1662841328 407 d4d1fa767fdfd1296b0f79bde8f93a0a ""
-  "notes.toc" 1662841479 205 45f6dc6f46e074053a434a03cf8b83ad "latex"
+  "notes.toc" 1662847697 205 45f6dc6f46e074053a434a03cf8b83ad "latex"
   "segment1/1.tex" 1662832112 2053 6b6eda3476e12b9a7f1ad0f02cd4504c ""
   (generated)
   "notes.aux"
@@ -235,8 +235,8 @@
   "notes.out"
   "notes.pre"
   "notes.toc"
-["makeindex notes.idx"] 1662841279 "notes.idx" "notes.ind" "notes" 1662841480
-  "notes.idx" 1662841479 99 874e811ff342d4ab14258c6d7b8b073e "latex"
+["makeindex notes.idx"] 1662847696 "notes.idx" "notes.ind" "notes" 1662847697
+  "notes.idx" 1662847697 99 874e811ff342d4ab14258c6d7b8b073e "latex"
   (generated)
   "notes.ilg"
   "notes.ind"
