@@ -1,0 +1,34 @@
+% LTeX: enabled=false
+
+\documentclass[openany]{book}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\pdftitle}{104 Notes}
+\usepackage{import}
+\inputfrom{..}{mm}
+
+\begin{document}
+
+\title{Hello there}
+\author{Matthew Meeker}
+
+\maketitle
+
+
+\toctrue
+\tableofcontents
+\tocfalse
+
+\newpage
+
+\chapter{A Chapter Name}
+
+\foreach \n in {1}
+{
+	\section{A segment or subsection \n}
+	\subfile{segment1/\n}
+}
+
+
+
+\end{document}

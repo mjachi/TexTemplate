@@ -1,0 +1,51 @@
+\documentclass[../notes.tex]{subfiles}
+
+\begin{document}
+
+
+With posets, we are interested in admission of combinatorial equivalence w.r.t. the structure of the object.
+
+\begin{definition}[Poset]
+  A \textit{poset (partially ordered set)} is a set $P$ with a binary relation $\leq$ such that
+  $\leq$ is
+
+  \begin{enumerate}
+    \item Reflexive (for sake of completeness, $x \leq x$)
+    \item Transitive ($x \leq y$ and $y \leq z \implies x \leq z$)
+    \item Antisymmetric ($x \leq y$ and $y \leq x \implies x = y$)
+  \end{enumerate}
+\end{definition}
+\begin{remark}
+  Note on notation: we define $[n] = \{1, \ldots, n\}$
+\end{remark}
+
+\begin{example}[Boolean Algebra/ Boolean Lattice $B_n$]
+  $\mathcal{P}([n])$ with a relation defined by $S \leq T$ iff $S \subseteq T$
+  (ordered by inclusion) makes a poset.
+\end{example}
+\begin{example}[$D_n$]
+  Given integer $n$, $D_n$ is defined on all divisors of $n$ with relation
+
+  \begin{equation*}
+    i \leq j \text{ iff } i | j
+  \end{equation*}
+\end{example}
+\begin{example}[$L_n(q)$]
+  All subspaces of $U_n(q)$ ($n$-dimensional vector spaces over $\FF(q)$) ordered under inclusion forms a poset.
+\end{example}
+\begin{example}[$\Pi_n$]
+  All partitions of $[n]$ ordered by refinement, ie, $\pi \leq \sigma$ if every block of $\pi$ is contained in a block of $\sigma$, forms a poset.
+\end{example}
+
+\begin{definition}[Cover Relation]
+  Denoted by $\precdot$; "$x$ is covered by $y$" ie $x \precdot y$ if $x < y$ and there does not exist a $z$ such that $x < z < y$.
+\end{definition}
+
+
+Another point of interest is the \textit{Hasse Diagram} -- to be defined properly later on -- with which 
+we graph the relations in a poset. From this, we derived colloquial definitions of \textit{chain} and \textit{anti-chain};
+respectively, a subset which is totally ordered vs. a subset in which no two elements are comparable. Respectively, the Hasse
+diagrams for these end up looking like a collection of vertices along a line and a collection of vertices skewed about, with
+no edges between them.
+
+\end{document}
