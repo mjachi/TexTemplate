@@ -1,0 +1,80 @@
+\documentclass{amsart}
+
+% Packages
+\usepackage{mathtools}
+\usepackage{amssymb,bm,bbold}
+\usepackage{enumerate}
+\usepackage{lipsum}
+\usepackage[dvipsnames]{xcolor}
+
+% hyperref
+\usepackage{hyperref}
+\usepackage{cleveref}
+\newcommand\myshade{90}
+\colorlet{mylinkcolor}{NavyBlue}
+\colorlet{mycitecolor}{Aquamarine}
+\colorlet{myurlcolor}{Aquamarine}
+
+\hypersetup{
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true,
+}
+
+% Bibliography
+\usepackage[]{natbib}
+\bibliographystyle{chicago}
+
+% counters
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Example~\theexample. #1} \rmfamily}{\medskip}
+\newcounter{definition}[section]
+\newenvironment{definition}[1][]{\refstepcounter{definition}\par\medskip
+   \noindent \textbf{Definition~\thedefinition. #1} \rmfamily}{\medskip}
+
+% theorem environments
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{problem}{Problem}
+\newenvironment{solution}{\paragraph{\textit{Solution}}}{\hfill$\square$}
+
+\usepackage{listings}
+
+% convenient notations
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Epsilon}{\mathcal{E}}
+\newcommand{\nsum}{\sum_{i=1}^n}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Typography, change document font
+\usepackage[tt=false, type1=true]{libertine}
+\usepackage[varqu]{zi4}
+\usepackage[libertine]{newtxmath}
+\usepackage[T1]{fontenc}
+
+
+% Disable paragraph indentation, and increase gap
+\usepackage{parskip}
+
+\title{A problem set for a course}
+\author{Matthew Meeker}
+\begin{document}
+\maketitle
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\begin{problem}
+  A problem
+\end{problem}
+\begin{solution}
+  Hopefully a solution
+\end{solution}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\end{document}
