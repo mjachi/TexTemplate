@@ -3,7 +3,7 @@
 all: doc clean
 
 doc:
-	cd src && latexmk notes.tex && cd ..
+	cd src && xelatex notes.tex && cd ..
 
 clean:
 	rm notes.log && cd src && rm *.aux *.bcf *.log *.out *.lua\
