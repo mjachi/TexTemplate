@@ -82,22 +82,25 @@
 \usepackage[libertine]{newtxmath}
 \usepackage[T1]{fontenc}
 
-
 % Disable paragraph indentation, and increase gap
 \usepackage{parskip}
+% For subfiles!
+\usepackage{subfiles}
 
-\title{A problem set for a course}
+
+
+\title{A large set of notes; there ought to be a title page!}
 \author{Matthew Meeker}
 \begin{document}
 \maketitle
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\begin{problem}
-  A problem
-\end{problem}
-\begin{solution}
-  Hopefully a solution
-\end{solution}
+
+\section{First Chapter}
+\subfile{Chap1/p1}
+
+
+
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \end{document}
